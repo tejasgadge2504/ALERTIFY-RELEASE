@@ -2,22 +2,25 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #000; /* Fallback background color */
     color: #fff;
 }
 
 .container {
     text-align: center;
     padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.7);
-    margin: 50px;
+    background: url('../images/background3.jpg') no-repeat center center;
+    background-size: cover;
+    margin: 50px auto;
+    max-width: 800px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
 }
 
 p {
@@ -30,24 +33,37 @@ p {
     padding: 15px 30px;
     font-size: 1.2em;
     color: #fff;
-    background-color: #444;
+    background-color: #f04e30;
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .download-button:hover {
-    background-color: #666;
+    background-color: #d43f21;
+    transform: scale(1.05);
 }
 
-.footer{
+.footer {
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 10px;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.footer h3 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.footer p {
+    margin: 0;
 }
 /* Media Queries */
 @media (max-width: 1200px) {
@@ -128,5 +144,3 @@ p {
         font-size: 0.8em;
     }
 }
-
-
